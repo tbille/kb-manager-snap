@@ -1,0 +1,18 @@
+name: kb
+version: '0.1.3'
+summary: A minimalist command line knowledge base manager 
+description: |
+  kb is a text-oriented minimalist command line knowledge base manager. kb can be considered a quick note collection and access tool oriented toward software developers, penetration testers, hackers, students or whoever has to collect and organize notes in a clean way. Although kb is mainly targeted on text-based note collection, it supports non-text files as well (e.g., images, pdf, videos and others).
+
+base: core20
+
+parts:
+  kb:
+    plugin: python
+    source: https://github.com/gnebbia/kb.git
+
+apps:
+  kb:
+    command: bin/kb
+    plugs:
+      - home

@@ -16,3 +16,4 @@ apps:
     command: bin/kb
     plugs:
       - home
+      - desktop
